@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.body {
+  font-family: 'Merienda', cursive;
+}
+
+@font-face {
+  font-family: 'Merienda';
+  font-weight: 400;
+  src: url(../fonts/merienda-regular-webfont.woff) format('woff'),
+  url(../fonts/merienda-regular-webfont.svg) format('svg'),
+  url(../fonts/Merienda-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Merienda';
+  font-weight: 500;
+  src: url(../fonts/merienda-medium-webfont.woff) format('woff'),
+  url(../fonts/merienda-medium-webfont.svg) format('svg'),
+  url(../fonts/Merienda-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Merienda';
+  font-weight: 700;
+  src: url(../fonts/merienda-bold-webfont.woff) format('woff'),
+  url(../fonts/merienda-bold-webfont.svg) format('svg'),
+  url(../fonts/Merienda-Bold.ttf) format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merienda', cursive;
+  color: orange;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: 'Merienda', cursive;
+  color: rgb(107, 107, 107);
+}
+
+.hidden {
+    display: none;
+}
+
+#container {
+  width: 428px;
+  border: solid 1px #333;
+  background: #efefef;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+#mainContent {
+  grid-template-columns: repeat(4, 85px);
+  grid-column-gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+}
+
+article {
+  grid-column: 1/-1;
+}
+
+img {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
